@@ -1,0 +1,27 @@
+{
+    "collectionName": "components_component_product_cards",
+    "info": {
+        "displayName": "Product-card",
+        "icon": "apps"
+    },
+    "options": {},
+    "attributes": {
+        "name": {
+            "type": "string"
+        },
+        "media": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": [
+                "images"
+            ]
+        },
+        "price": {
+            "type": "decimal"
+        },
+        "Link": {
+            "type": "text"
+        }
+    },
+    "config": {}
+}

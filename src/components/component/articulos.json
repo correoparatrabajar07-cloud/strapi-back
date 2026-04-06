@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_component_articulos",
+  "info": {
+    "displayName": "Articulos",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "products": {
+      "type": "component",
+      "component": "component.product-card",
+      "repeatable": true
+    },
+    "button": {
+      "type": "component",
+      "component": "component.link",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

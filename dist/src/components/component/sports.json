@@ -1,0 +1,19 @@
+{
+    "collectionName": "components_component_sports",
+    "info": {
+        "displayName": "Sports",
+        "icon": "apps"
+    },
+    "options": {},
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "types": {
+            "type": "component",
+            "component": "component.types",
+            "repeatable": true
+        }
+    },
+    "config": {}
+}
