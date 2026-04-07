@@ -3,18 +3,18 @@ import type { Core } from '@strapi/strapi';
 const config: Core.Config.Middlewares = [
   'strapi::logger',
   'strapi::errors',
-  {
-    name: 'strapi::security',
-    config: {
-      contentSecurityPolicy: {
-        useDefaults: true,
-        directives: {
-          // Permite que tu frontend se conecte y cargue Strapi en un iframe
-          'frame-ancestors': ["'self'", 'https://strapi-back--correoparatraba.replit.app/'],
-        },
+ {
+  name: 'strapi::security',
+  config: {
+    contentSecurityPolicy: {
+      useDefaults: true,
+      directives: {
+        'frame-ancestors': ["'self'", process.env.FRONTEND_URL || 'https://strapi-front-mocha.vercel.app'],
+        'script-src': ["'self'", "'unsafe-inline'", process.env.FRONTEND_URL || 'https://strapi-front-mocha.vercel.app'],
       },
     },
   },
+},
   {
     name: 'strapi::cors',
     config: {
