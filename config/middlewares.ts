@@ -10,7 +10,7 @@ const config: Core.Config.Middlewares = [
         useDefaults: true,
         directives: {
           // Permite que tu frontend se conecte y cargue Strapi en un iframe
-          'frame-ancestors': ["'self'", 'https://strapi-front-mocha.vercel.app'],
+          'frame-ancestors': ["'self'", 'https://strapi-back--correoparatraba.replit.app'],
         },
       },
     },
